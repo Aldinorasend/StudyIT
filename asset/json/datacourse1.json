@@ -36,19 +36,19 @@
             "title": "UI/UX",
             "level": "Beginner Class",
             "date": "24 - 25 Semptember 2024",
-            "image": "../asset/image/uiux.jpg"
+            "image": "asset/image/uiux.jpg"
         },
         {
             "title": "Machine Learning",
             "level": "Beginner Class",
             "date": "24 - 25 Semptember 2024",
-            "image": "../asset/image/fe.png"
+            "image": "asset/image/fe.png"
         },
         {
             "title": "Front-end Web Development",
             "level": "Beginner Class",
             "date": "24 - 25 Semptember 2024",
-            "image": "../asset/image/backend.png"
+            "image": "asset/image/backend.png"
         }
 
 
