@@ -1,0 +1,19 @@
+{
+    "paymentMethods": [
+    {
+        "id": "visa",
+        "name": "Visa",
+        "logo": "../image/visa-logo-svgrepo-com.svg"
+    },
+    {
+        "id": "mastercard",
+        "name": "Mastercard",
+        "logo": "../image/mastercard-svgrepo-com.svg"
+    },
+    {
+        "id": "amex",
+        "name": "American Express",
+        "logo": "../image/american-express-svgrepo-com.svg"
+    }
+    ]
+}
