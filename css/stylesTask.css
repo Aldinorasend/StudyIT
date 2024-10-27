@@ -1,0 +1,78 @@
+.task-title {
+    position: absolute;
+    top: 8%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.task-desc {
+    position: absolute;
+    top: 18%;
+    left: 25.2%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+}
+
+.task-desc p {
+    font-weight: bold; /* Make the paragraph text bold */
+}
+
+#json-desc {
+    font-weight: normal; /* Override to normal weight for span */
+}
+
+.task-points {
+    font-weight: bold;
+    font-size: larger;
+    position: absolute;
+    top: 28%;
+    left: 9.4%;
+    transform: translate(-50%, -50%);
+}
+
+#json-points {
+    position: absolute;
+    top: 37%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.filesub{
+    position: absolute;
+    top: 50%;
+    left: 9.4%;
+    transform: translate(-50%, -50%);
+}
+
+.subm-box {
+    position: absolute;
+    top: 55%;
+    left: 6.5%;
+    width: 100%;
+    max-width: 1680px;
+    height: 280px;
+    background-color: #F2F2F2;
+    border: 1px double #DADADA;
+    border-radius: 12px;
+}
+
+.file-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px; /* Adjust icon size as needed */
+    height: 13 0px;
+    object-fit: cover; /* Keeps the aspect ratio of the image */
+}
+
+.subm-box p {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding-top: 200px;
+
+}
