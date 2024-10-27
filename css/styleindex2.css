@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Inter",sans-serif;
+    background-color: white;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+   
+    width: 100%;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.nav-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2rem;
+    
+}
+.nav-logo img{
+   
+    width: 2.9rem;
+    height: 2.9rem;
+    margin-right: 1rem;
+}
+
+.nav-list{
+    margin-right: 1rem;
+    padding: 2rem;
+    border: 1px solid black;
+}
+
+
+.nav-list li {
+    display: inline;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 2rem;
+    font-size: 1rem;
+    
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-button{
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.btnSignUp {
+   margin-left:2rem;
+
+    
+}
