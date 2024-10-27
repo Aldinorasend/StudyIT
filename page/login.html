@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to StudyIT</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+</head>
+
+<body>
+    <div class="login-container">
+        <h3>Insert Your Credentials</h3>
+        <form action="">
+            <div class="forms">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" , id="email" , required>
+                </div>
+                <div class="password-container">
+                    <label for="password">Password</label>
+                    <input type="password" , id="password" required>
+                    <!-- <span id="togglePass" class="material-symbols-outlined">
+                        visibility
+                    </span> -->
+                </div>
+            </div>
+            <div class="options">
+                <input type="checkbox" , id="checkbox">
+                <label for="checkbox">Remember Me</label>
+
+                <a href="/page/resetPass.html">Forgot Password?</a>
+            </div>
+            <div class="button-container">
+                <button class="login-button">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
