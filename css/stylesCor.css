@@ -1,133 +1,139 @@
+/* General body styling */
 body {
     background-color: #fffafa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .banner {
     position: relative;
     width: 100%;
+    height: auto;
     max-height: 250px;
-    margin: 0;
     overflow: hidden;
 }
 
 .banner img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
-    margin: 0;
+}
+
+.arw-back {
+    position: absolute;
+    top: 20px;          /* Position from the top of the page */
+    left: 20px;         /* Position from the left of the page */
+    z-index: 1;
+}
+
+.arw-back img {
+    width: 40px;        /* Set the size of the arrow */
+    cursor: pointer;    /* Change cursor on hover */
 }
 
 .banner-text {
     position: absolute;
     top: 50%;
-    left: 53.5%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-right: 5px;
+    text-align: center;
 }
 
+/* Center and style Bootstrap card */
+/* Card bootstrap minta ditendang */
 .card {
-    position: relative; /* Position the card absolutely */
-    top: 50%; /* Adjust as needed to position it below the banner text */
-    left: 32%;
-    transform: translate(-50%, -50%); /* Center the card horizontally */
-    max-width: 20rem;
-    width: 100%;
-    z-index: 1; /* Ensure the card appears above the banner */
-    margin-right: 5px;
+    max-width: 400px;
+    margin: 20px auto; 
 }
 
 .card-body {
     background-color: #113f67;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .card-text {
-    color: white;
-    font-weight: 400;
-    font-size: large;
+    font-size: 1.1em;
 }
 
 .calendar-text {
-    color: white;
     display: flex;
     align-items: center;
-    gap: 5px; /* Adds spacing between image and text */
-    font-size: medium;
+    gap: 5px;
+    font-size: 0.9em;
+    color: white;
 }
 
 .calendar-icon {
-    width: 20px; /* Adjust icon size as needed */
+    width: 20px;
     height: 20px;
-    object-fit: cover; /* Keeps the aspect ratio of the image */
 }
 
-.dec-container {
-    position: absolute; /* Maintain natural flow */
-    max-width: 330px;
-    color: black; /* Style the text as needed */
-    left: 31.3%;
-    bottom: 43%;
-    transform: translate(-50%, -50%); /* Center the card horizontally */
-    font-size: 2rem;
-    font-weight: 650;
+/* Container for description sections */
+.dec-container, .des-container, .des-tools {
+    max-width: 800px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
     background-color: #F0F1F2;
-    border-radius: 2px; /* Add border radius here */
-    padding: 10px; /* Optional: add padding for better spacing */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for depth */
-    height: 70px;
-    justify-content: center;
-    
-}
-
-.des-container {
-    position: absolute;
-    max-width: 1000px;
-    width: 1000px;
-    color: black;
-    left: 49.8%;
-    bottom:10%;
-    transform: translate(-50%, -50%);
-    background-color: #F0F1F2;
-    border-radius: 1px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    justify-content: left;
-    padding-left: 30px;
-    padding-top: 10px;
+    border-radius: 4px;
 }
 
-.des-tools {
-    position: absolute;
-    max-width: 1000px;
-    width: 1000px;
-    color: black;
-    left: 49.8%;
-    bottom: 0px;
-    transform: translate(-50%, -50%);
-    background-color: #F0F1F2;
-    border-radius: 1px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
+.des-container p, .des-tools p {
+    margin: 5px 0;
 }
 
 .img-icon {
-    width: 50px; /* Adjust icon size as needed */
-    height: 50px; /* Adjust height as needed */
-    object-fit: cover; /* Keeps the aspect ratio of the image */
-    margin: 0 5px; /* Adds space between images */
+    width: 40px;
+    height: 40px;
+    margin: 5px;
 }
 
 .btn {
-    position: absolute;
-    top: 32%; /* Adjust as needed to position it below the banner text */
-    left: 47%;
-    transform: translate(-50%, -50%);
+    display: block;
     width: 200px;
+    margin: 20px auto;
     color: #113f67;
+}
+
+.enroll-container {
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .banner-text {
+        font-size: 1.5em;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    .dec-container, .des-container, .des-tools {
+        padding: 10px;
+    }
+
+    .btn {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text {
+        font-size: 1.2em;
+    }
+
+    .calendar-text {
+        font-size: 0.8em;
+    }
+
+    .btn {
+        width: 90%;
+    }
 }
