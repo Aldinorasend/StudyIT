@@ -4,33 +4,47 @@ html {
     color: #113F67;   
 }
 
-.forms div {
+h1{
+    color: black;
+    font-size: 32;
+}
+
+h3{
+    font-size: 20;
+    font-weight: normal;
+}
+
+.signin-prompt {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Adjust gap as needed for spacing */
+}
+
+.signin-prompt a {
+    color: #113F67;
+    font-size: 16px;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.register-forms div {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
     /* Optional spacing between form fields */
 }
 
-.options {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.options a {
-    margin-left: auto;
-    font-weight: bold;
-}
-
-.login-container {
+.register-container {
     width: 400px;
     margin: 0 auto;
     /* Centers the container on the page */
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
-.forms input[type="email"],
-.forms input[type="password"] {
+.register-forms input[type="email"],
+.register-forms input[type="password"],
+.register-forms input[type="text"] {
     width: 100%;
     /* Makes input fields take up the full width of their container */
     padding: 10px;
@@ -44,50 +58,19 @@ html {
     border-width: 1px;
 }
 
-.forms label {
+.register-forms label {
     margin-bottom: 5px;
     /* Adjust the spacing as needed */
 }
 
-.forms input[type="email"],
-.forms input[type="password"] {
+.register-forms input[type="email"],
+.register-forms input[type="password"],
+.register-forms input[type="text"] {
     margin-top: 5px;
     /* Adjust the spacing as needed */
 }
 
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 20
-}
-
-/* .password-container {
-    position: relative;
-    width: 100%;
-} */
-
-/* .password-container input[type="password"],
-.password-container input[type="text"] {
-    width: 100%;
-    padding-right: 30px;
-    /* Prevent overlap with the icon 
-} */
-
-/* .toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 24px;
-    /* Adjust size as needed 
-    color: #333;
-    /* Icon color 
-} */
-
-.login-button {
+.register-button {
     background-color: #113F67;
     color: white;
     border: none;

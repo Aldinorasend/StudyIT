@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to StudyIT</title>
     <link rel="stylesheet" href="/css/login.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
 </head>
 
 <body>
@@ -22,9 +20,6 @@
                 <div class="password-container">
                     <label for="password">Password</label>
                     <input type="password" , id="password" required>
-                    <!-- <span id="togglePass" class="material-symbols-outlined">
-                        visibility
-                    </span> -->
                 </div>
             </div>
             <div class="options">
@@ -34,7 +29,7 @@
                 <a href="/page/resetPass.html">Forgot Password?</a>
             </div>
             <div class="button-container">
-                <button class="login-button">Login</button>
+                <button class="login-button" onclick="submitLogin()">Login</button>
             </div>
         </form>
     </div>
