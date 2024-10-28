@@ -11,7 +11,9 @@
             "title": "UI/UX",
             "level": "Beginner Class",
             "date": "24 - 25 Semptember 2024",
-            "image": "../asset/image/uiux.jpg"
+            "image": "../asset/image/uiux.jpg",
+            "page": "../../page/courseView.html"
+
         },
         {
             "title": "Machine Learning",
