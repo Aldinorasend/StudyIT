@@ -12,7 +12,7 @@ function submitLogin() {
             if (user) {
                 // Redirect on successful login
                 alert("Login successful! Redirecting...");
-                window.location.href = 'homePage.html';
+                window.location.href = '../page/homePage.html';
             } else {
                 // Show error message if credentials do not match
                 alert("Incorrect email or password.");

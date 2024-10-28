@@ -7,13 +7,14 @@ html{
     margin: 0;
     padding: 0;
     font-family: "Inter",sans-serif;
+    
 }
 body{
     max-width: 100vw;
+    overflow-x:hidden ;
 
 }
 .container-fluid {
-    padding: 2rem;
     color: #113F67;
     display: flex;
     flex-direction: row;
@@ -32,6 +33,9 @@ body{
     flex-direction: row;
     align-items: center;
     padding-left: 2rem;
+}
+.nav-brand h1{
+    font-weight: bold;
 }
 .nav-brand img{
     width: 100%;
@@ -53,11 +57,11 @@ body{
     background-color: #ffffff; /* Change the color as needed */
     color: #003366; /* Adjust color as needed */
     padding: 0.5rem 1rem;
-    font-size: 16px;
+    font-size: 1rem;
     border: 1px solid #003366;
     cursor: pointer;
     display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center-align items vertically */
+    align-items: left; /* Center-align items vertically */
     gap: 5px; /* Space between text and icon */
 }
 
@@ -69,14 +73,13 @@ body{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 160px;
+    min-width: 130px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
@@ -93,7 +96,10 @@ li{
     display: inline;
     padding: 2rem;
 }
-a{
+.dropdown-content ul{
+    padding-left: 1rem;
+}
+li a{
     text-decoration: none;
     color: #113F67;
     font-weight:500;
@@ -108,11 +114,10 @@ a{
     display: flex;
     flex-direction: row;    
     position: relative;
-
 }
 .content{
     padding: 5rem;
-    
+
 }
 
 .hero .content h1{
@@ -177,6 +182,7 @@ a{
     width: 100%;
     text-align: center;
     margin-top: 2rem;
+    font-weight: bold;
 }
 .content-container .row{
     margin:0.5rem 10rem 0 0;
@@ -184,19 +190,28 @@ a{
 }
 .card{
     width: 300px;
-    height: 300px;
+    height: 2rem;
     background-color: #113F67;
     border-radius: 10px;
     margin: 12px 20px;
+    
+}
+.courses-container{
+    background-color: #113F67;
+}
+.card-body{
+    background-color: #113F67;
+}
+.card-body .card-title,.date-card,.card-level{
+    color: white;
 }
 .card-img-top{
-   border-radius: 10px;
    width: 100%;
-   height: 190px;
+   height: 10rem;
 }
 
 .card-body{
-    padding:5px;  
+    padding:0.5rem;  
     color: white;
     font-weight:600;
 }
@@ -264,21 +279,26 @@ html{
 @media (max-width: 768px) {
     
     .nav-brand{
+        margin-left: 0rem;
         width: 50%;
+        padding-left: 1rem;
     }
     .nav-brand img{
-        width: 15%;
-        height: 5%;
+        width: 20%;
+        height: 7%;
     }
-
+    .nav-brand h1{
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+    }
     /* Display the hamburger icon */
     .hamburger {
         display: block;
-        font-size: 24px;
+        font-size: 2rem;
         background: none;
         border: none;
         cursor: pointer;
-        margin-left: 8rem;
+        margin-right: 2rem;
         color: #113F67;
     }
     .nav-menu .nav-list{

@@ -14,7 +14,8 @@ $(document).ready(function() {
 
                 // Set the course image and details
                 card.find('.card-img-top').attr('src', course.image);
-                card.find('.card-title').text(`${course.title} (${course.level})`);
+                card.find('.card-title').text(`${course.title}`);
+                card.find('.card-level').text(`(${course.level})`);
                 card.find('.date-card').text(`${course.date}`);
 
                 // Append the card to the container
