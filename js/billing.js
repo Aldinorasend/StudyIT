@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const zipcodeInput = document.getElementById('zipcode');
 
     //konfigurasi JSON
-    fetch('../json/billing-config.json')
+    fetch('/asset/json/billing-config.json')
         .then(response => response.json())
         .then(config => {
             countryInput.value = config.defaultCountry;
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     alert(config.validationMessages.zipcode);
                     return;
                 }
-                window.location.href = "../../page/homePage.html";
+                window.location.href = "/page/homePage.html";
             });
         })
         .catch(error => console.error('Error loading config:', error));
