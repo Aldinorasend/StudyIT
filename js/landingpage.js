@@ -17,7 +17,13 @@ $(document).ready(function() {
                 card.find('.card-title').text(`${course.title}`);
                 card.find('.card-level').text(`(${course.level})`);
                 card.find('.date-card').text(`${course.date}`);
-
+                card.on('click', function() {
+                    if (index === 1) { // Check if it's card-2 (index starts at 0)
+                        window.location.href = `${course.page}`; // Redirect to the desired page
+                    }
+                    // You can add more conditions here for other cards if needed
+                });
+                
                 // Append the card to the container
                 container.append(card);
             });
@@ -41,3 +47,6 @@ document.addEventListener('click', function (event) {
         sidebar.classList.remove('active'); // Close the sidebar
     }
 });g
+function navigatePayment(){
+    window.location.href = "../Payment/payment.html";
+}

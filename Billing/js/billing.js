@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     alert(config.validationMessages.zipcode);
                     return;
                 }
+                window.location.href = "../../page/homePage.html";
             });
         })
         .catch(error => console.error('Error loading config:', error));
