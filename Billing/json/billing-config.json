@@ -1,0 +1,19 @@
+{
+    "countries": [
+        "Indonesia", 
+        "Malaysia", 
+        "Singapore", 
+        "Thailand", 
+        "Philippines"
+    ],
+    "defaultCountry": "Indonesia",
+    "zipCodeFormat": "^[0-9]{5}$",
+    "cityRequired": true,
+    "streetRequired": true,
+    "validationMessages": {
+        "country": "Please enter a valid country.",
+        "city": "City is required.",
+        "street": "Street is required.",
+        "zipcode": "Zip code must be 5 digits."
+    }
+}
