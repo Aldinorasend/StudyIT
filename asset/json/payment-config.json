@@ -1,0 +1,16 @@
+{
+    "paymentMethods": [
+        {
+            "id": "visa",
+            "name": "Visa"
+        },
+        {
+            "id": "mastercard",
+            "name": "Mastercard"
+        },
+        {
+            "id": "amex",
+            "name": "American Express"
+        }
+    ]
+}
