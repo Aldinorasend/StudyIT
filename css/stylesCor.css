@@ -22,14 +22,14 @@ body {
 
 .arw-back {
     position: absolute;
-    top: 20px;          /* Position from the top of the page */
-    left: 20px;         /* Position from the left of the page */
+    top: 20px;          
+    left: 20px;         
     z-index: 1;
 }
 
 .arw-back img {
-    width: 40px;        /* Set the size of the arrow */
-    cursor: pointer;    /* Change cursor on hover */
+    width: 40px;        
+    cursor: pointer;    
 }
 
 .banner-text {
@@ -44,8 +44,8 @@ body {
     text-align: center;
 }
 
-/* Center and style Bootstrap card */
-/* Card bootstrap minta ditendang */
+
+
 .card {
     max-width: 400px;
     margin: 20px auto; 
@@ -73,7 +73,7 @@ body {
     height: 20px;
 }
 
-/* Container for description sections */
+
 .dec-container, .des-container, .des-tools {
     max-width: 800px;
     width: 90%;
@@ -105,7 +105,7 @@ body {
     text-align: center;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
     .banner-text {
         font-size: 1.5em;
