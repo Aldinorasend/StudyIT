@@ -14,37 +14,37 @@
 
 .arw-back {
     position: absolute;
-    top: 20px;          /* Position from the top of the page */
-    left: 20px;         /* Position from the left of the page */
+    top: 20px;          
+    left: 20px;         
     z-index: 1;
 }
 
 .arw-back img {
-    width: 40px;        /* Set the size of the arrow */
-    cursor: pointer;    /* Change cursor on hover */
+    width: 40px;        
+    cursor: pointer;    
 }
 
 .filesub {
-    position: relative; /* Keep relative positioning */
-    width: 90%; /* Responsive width */
-    max-width: 600px; /* Optional: Set a maximum width */
-    text-align: left; /* Align text to the left */
-    margin-top: 100px; /* Margin from the top */
-    margin-left: 5.7%; /* Adjust this value as needed to move it more to the left */
+    position: relative; 
+    width: 90%; 
+    max-width: 600px;
+    text-align: left;
+    margin-top: 100px; 
+    margin-left: 5.7%; 
 }
 
 
 .subm-box {
-    position: relative; /* Change to relative for better layout control */
-    margin: 15px auto; /* Center the box */
+    position: relative;
+    margin: 15px auto; 
     margin-top: 1px;
-    width: 90%; /* Responsive width */
-    max-width: 1680px; /* Maintain the maximum width */
-    height: 280px; /* Fixed height */
+    width: 90%; 
+    max-width: 1680px; 
+    height: 280px; 
     background-color: #F2F2F2;
     border: 1px double #DADADA;
     border-radius: 12px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .file-icon {
@@ -52,9 +52,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 130px; /* Adjust icon size as needed */
-    height: 130px; /* Corrected height */
-    object-fit: cover; /* Keeps the aspect ratio of the image */
+    width: 130px; 
+    height: 130px; 
+    object-fit: cover; 
 }
 
 .subm-box p {
@@ -69,12 +69,12 @@
 .dec-container, .des-container, .des-tools {
     max-width: 800px;
     width: 90%;
-    margin: 15px 0 15px 5.7%; /* Adjust the left margin to align with .filesub */
+    margin: 15px 0 15px 5.7%; 
     padding: 15px;
     background-color: #F0F1F2;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 
@@ -84,17 +84,17 @@
 
 @media (max-width: 768px) {
     .subm-box {
-        height: auto; /* Allow height to adjust based on content */
+        height: auto; 
     }
 }
 
 @media (max-width: 480px) {
     .subm-box {
-        padding: 15px; /* Add some padding for smaller screens */
+        padding: 15px; 
     }
 
     .file-icon {
-        width: 100px; /* Smaller icon size for smaller screens */
-        height: 100px; /* Adjust height accordingly */
+        width: 100px;
+        height: 100px; 
     }
 }
