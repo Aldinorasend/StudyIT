@@ -48,5 +48,5 @@ document.addEventListener('click', function (event) {
     }
 });g
 function navigatePayment(){
-    window.location.href = "../Payment/payment.html";
+    window.location.href = "/page/payment.html";
 }
