@@ -4,6 +4,10 @@ html {
     color: #113F67;   
 }
 
+h5 {
+    font-weight: normal;
+}
+
 .forms div {
     display: flex;
     flex-direction: column;
@@ -55,13 +59,13 @@ html {
     /* Adjust the spacing as needed */
 }
 
-.material-symbols-outlined {
+/* .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
         'opsz' 20
-}
+} */
 
 /* .password-container {
     position: relative;
