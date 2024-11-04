@@ -5,12 +5,16 @@ html {
 }
 
 h1{
-    color: black;
+    color: #113F67;
     font-size: 32;
 }
 
 h3{
     font-size: 20;
+    font-weight: normal;
+}
+
+h5{
     font-weight: normal;
 }
 

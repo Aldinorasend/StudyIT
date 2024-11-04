@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - StudyIT</title>
+    <link rel="stylesheet" href="/css/stylecontactus.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1 class="logo">StudyIT</h1>
+            <nav>
+                <a href="/page/homePage.html">Home</a>
+                <a href="#">Bootcamp</a>
+                <a href="#" class="active">Contact Us</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Aldino ▼</button>
+                    <div class="dropdown-content">
+                        <a href="/page/editprofile.html">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-header">
+        <h2>CONTACT US</h2>
+        <p>We'd love to hear from you! Any question or remarks? Just write us a message!</p>
+    </section>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>CONTACT INFORMATION</h3>
+            <p>Say something to start a live chat!</p>
+            <p>📞 +62 XXX XXXX XXXX</p>
+            <p>📧 [Your Email]</p>
+            <p>📍 Jl. In Dulu Aja No. 777, Kota Kenangan, 69420</p>
+            <div class="social-icons">
+                <a href="#">🌐</a>
+                <a href="#">🌐</a>
+                <a href="#">🌐</a>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <textarea id="message" placeholder="Write your message.." required></textarea>
+            <button type="button" onclick="saveFormData()">Send Message</button>
+        </form>
+        
+
+    <footer>
+        <p>PT. Dikerjain Dua Orang</p>
+        <p>Jl. In Dulu Aja No. 777, Kota Kenangan, 69420</p>
+        <p>+62 XXX XXXX XXXX</p>
+        <p>2024 All Rights Reserved ©</p>
+    </footer>
+    <script>
+        function saveFormData() {
+            // Capture form values
+            const formData = {
+                firstName: document.getElementById("firstName").value,
+                lastName: document.getElementById("lastName").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                message: document.getElementById("message").value
+            };
+    
+            // Convert form data to JSON
+            const jsonData = JSON.stringify(formData);
+    
+            // Log the JSON data to console (you can save it to a file or server here)
+            console.log(jsonData);
+    
+            // Optionally, clear the form after saving
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+    
+</body>
+</html>

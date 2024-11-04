@@ -1,20 +1,19 @@
-document.addEventListener('DOMContentLoaded', async function() {
+document.addEventListener('DOMContentLoaded', async function () {
     const form = document.getElementById('billingForm');
     const yearSelect = document.getElementById('expirationYear');
     const cardNumberInput = document.getElementById('cardNumber');
 
-    // Prevent non-numeric input in the card number field
+    // Mencegah input selain angka
     cardNumberInput.addEventListener('input', function (e) {
-        // Remove any non-numeric characters
-        e.target.value = e.target.value.replace(/\D/g, '');
+        this.value = this.value.replace(/\D/g, ''); // Hanya angka yang diperbolehkan
     });
-    
+
     // Load payment configuration
     try {
-        const response = await fetch('json/payment-config.json');
+        const response = await fetch('/asset/json/payment-config.json');
         const config = await response.json();
 
-        // Optional: validasi bahwa metode pembayaran yang ada di HTML sesuai dengan JSON
+        // Validasi metode pembayaran
         const availableMethods = config.paymentMethods.map(method => method.id);
         document.querySelectorAll('input[name="paymentMethod"]').forEach(input => {
             if (!availableMethods.includes(input.id)) {
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     }
 
     // Form submission handler
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
         const selectedPaymentMethod = document.querySelector('input[name="paymentMethod"]:checked');
         const nameOnCard = document.getElementById('nameOnCard').value;
@@ -44,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         const expirationYear = yearSelect.value;
 
         if (!selectedPaymentMethod || !nameOnCard || !cardNumber || !expirationMonth || !expirationYear) {
-            alert('Please fill in all fields');
+            alert('Mohon isi bagian ini');
             return;
         }
 
@@ -56,6 +55,6 @@ document.addEventListener('DOMContentLoaded', async function() {
             expirationYear
         });
 
-        window.location.href = "../billing/billing.html"; // Adjust the path if necessary
+        window.location.href = "/page/billing.html"; // Adjust the path if necessary
     });
 });
