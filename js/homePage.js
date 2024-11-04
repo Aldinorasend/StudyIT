@@ -50,31 +50,3 @@ document.addEventListener('click', function (event) {
 function navigatePayment(){
     window.location.href = "/page/payment.html";
 }
-// Function to check if element is in viewport
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.bottom >= 0
-    );
-  }
-  
-  // Function to animate elements on scroll
-  function animateOnScroll() {
-    const benefitsContainer = document.querySelector('.benefits-container');
-    const testimoniContainer = document.querySelector('.testimoni-container');
-  
-    // Check if each container is in view and add the active class
-    if (isInViewport(benefitsContainer)) {
-      benefitsContainer.classList.add('active');
-    }
-    if (isInViewport(testimoniContainer)) {
-      testimoniContainer.classList.add('active');
-    }
-  }
-  
-  // Listen for scroll events
-  window.addEventListener('scroll', animateOnScroll);
-  
-  // Initial check in case elements are already in view
-  animateOnScroll();
