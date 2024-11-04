@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     alert(config.validationMessages.zipcode);
                     return;
                 }
-                window.location.href = "/page/homePage.html";
+                window.location.href = "/page/homePageEnroll.html";
             });
         })
         .catch(error => console.error('Error loading config:', error));
