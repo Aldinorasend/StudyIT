@@ -1,6 +1,6 @@
 /* General body styling */
 body {
-    background-color: #fffafa;
+    background-color: #fffafa !important;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;

@@ -1,15 +1,17 @@
-const video = document.getElementById('courseVideo');
-const taskButton = document.getElementById('taskButton');
+$(document).ready(function() {
+    const $video = $('#courseVideo');
+    const $taskButton = $('#taskButton');
 
-// Initially hide the task button
-taskButton.style.display = 'none';
+    // Initially hide the task button
+    $taskButton.hide();
 
-// Show the button when the video ends
-video.addEventListener('ended', () => {
-    taskButton.style.display = 'block'; // Show the button when video ends
-});
+    // Show the button when the video ends
+    $video.on('ended', function() {
+        $taskButton.show();
+    });
 
-// Hide the button when the video is played again
-video.addEventListener('play', () => {
-    taskButton.style.display = 'none'; // Hide the button while video is playing
+    // Hide the button when the video is played again
+    $video.on('play', function() {
+        $taskButton.hide();
+    });
 });

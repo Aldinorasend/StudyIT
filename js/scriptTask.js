@@ -1,24 +1,39 @@
-// Fetch JSON data
-fetch('../asset/json/dataTask.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        // Set title
-        document.getElementById('json-title').textContent = data.title;
+// Drag-and-Drop File Upload
+const dropZone = document.getElementById('dropZone');
+const fileList = document.getElementById('fileList');
+const introText = document.getElementById('introText');
 
-        // Set description
-        document.getElementById('json-desc').textContent = data.desc;
+dropZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.classList.add('dragover');
+});
 
-        // Set task points
-        const pointsContainer = document.getElementById('json-points');
-        data.points.forEach(point => {
-            const paragraph = document.createElement('p');
-            paragraph.textContent = point;
-            pointsContainer.appendChild(paragraph);
-        });
-    })
-    .catch(error => console.error('Error fetching the JSON data:', error));
+dropZone.addEventListener('dragleave', () => {
+    dropZone.classList.remove('dragover');
+});
+
+dropZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropZone.classList.remove('dragover');
+    const files = e.dataTransfer.files;
+
+    if (files.length > 0) {
+        displayFiles(files); // Display the dropped files
+    }
+});
+
+function displayFiles(files) {
+    // Remove the introductory text and icon after a file is dropped
+    if (introText) {
+        introText.style.display = 'none';
+    }
+
+    // Clear the previous file list
+
+
+    Array.from(files).forEach(file => {
+        const fileItem = document.createElement('p');
+        fileItem.textContent = `📄 ${file.name}`;
+        fileList.appendChild(fileItem);
+    });
+}

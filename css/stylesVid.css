@@ -1,17 +1,27 @@
-body{
+body {
     display: flex;
     background-color: white;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: flex-start; /* Align items to the start (top) */
     align-items: center;     
     height: 100vh;           
-    margin: 0;    
+    margin: 0;   
+    font-family: Arial, Helvetica, sans-serif; 
 }
 
-.arw-back {
-    position: absolute;
-    top: 20px;          
-    left: 20px;        
+.app-bar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    width: 100%; /* Full width */
+    padding: 10px 20px; /* Padding for the app bar */
+    padding-left: 50px;
+    background-color: #113f67; /* App bar background color */
+    color: white; /* Text color */
+    position: relative; /* Relative positioning */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);  /* Shadow for the app bar */
+    margin-bottom: 40px;
+    margin-top: -18.5px;
 }
 
 .arw-back img {
@@ -19,27 +29,30 @@ body{
     cursor: pointer;    
 }
 
-.vid-cor {
-    max-width: 800px;      
-    width: 100%;           
+.app-title {
+    font-size: 24px; /* Title font size */
+    font-weight: bold; /* Make title bold */
 }
 
+.vid-cor {
+    max-width: 1200px;      
+    width: 100%;    
+    margin-top: 18.5px;       
+}
 
 video {
     width: 100%;           
     height: auto;          
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-
 }
-
 
 .task-button {
     display: none;         
-    margin-top: 30px;     
+    margin-top: 60px;     
 }
 
 .custom-button {
-    background-color: #113f67; 
+    background-color: #113f67;
     color: white; 
     padding: 15px 80px;
     border: none;
@@ -51,9 +64,8 @@ video {
     cursor: pointer; 
     transition: background-color 0.3s; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-
 }
 
 .custom-button:hover {
-    background-color: #113f33; 
+    background-color: #10314e; 
 }
