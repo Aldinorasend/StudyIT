@@ -26,6 +26,7 @@ h1 {
 
 .form-group {
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 label {
@@ -40,6 +41,7 @@ input[type="text"], select {
     border: 1px solid #113F67;
     border-radius: 2px;
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 .payment-method {
@@ -50,6 +52,7 @@ input[type="text"], select {
     padding: 0.5rem;
     border: 1px solid #113F67;
     border-radius: 2px;
+    box-sizing: border-box;
 }
 
 .payment-method label {
@@ -88,8 +91,9 @@ input[type="text"], select {
 
 .expiration-inputs {
     display: flex;
-    width: 420px;
+    width: 100%;
     gap: 1rem;
+    box-sizing: border-box;
 }
 
 .expiration-inputs select {
@@ -97,7 +101,7 @@ input[type="text"], select {
 }
 
 button {
-    width: 420px;
+    width: 100%;
     padding: 0.75rem;
     background-color: #00264d;
     color: white;
@@ -106,6 +110,7 @@ button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 button:hover {
